@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)) ,url(weather-blizzard-nature-outdoors.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.container{
+    width: 100 px;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    overflow: hidden;
+    box-sizing: border-box; 
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{ 
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+
+/*nav ul li::after{
+    transition:"0.8s";
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom:-5px ;
+    background: #012bc3;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}*/
+
+nav ul li a:hover{
+    color: #e31212;
+}
+
+.row-1 , .row-2 , .row-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+.row-1-1 , .row-2-1 , .row-3-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 60px ;
+}
+
+.row-1-1 h2 , .row-2-1 h2 , .row-3-1 h2{
+    font-size: 35px;
+}
+
+.row-1-1 h4 , .row-2-1 h4, .row-3-1 h4{
+    font-size: 20px;
+}
+
+.row-1-1 p , .row-2-1 p , .row-3-1 p{
+    font-size: 18px;
+}
+
+button{
+width: 150px;
+background: linear-gradient(to right, #cb1e1e, #640202);
+color: antiquewhite;
+border-radius: 4px;
+transition: width 0.5s;
+font-size: 20px;
+padding: 5px;
+
+}
+
+button:hover{
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 2px 2px 0px #1a1910;
+    display: flex;
+    align-items: center;
+    width: 170px;
+}
+
+button img{
+    width: 20px;
+    display: none;
+}
+
+button:hover img{
+    display: block;
+}
+
+.row-1-2 img , .row-2-2 img , .row-3-2 img{
+    width: 90%;
+}
+
+.row-1-2 , .row-2-2 , .row-3-2 {
+    display: flex;
+    flex-basis: 60%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row-1-1::after, .row-2-1::after , .row-3-1::after{
+    content: '';
+    background: linear-gradient(to bottom, #cb1e1e, #640202);
+    width: 10px;
+    height: 230px;
+    position: absolute;
+    left: -40px;
+    top: -2px;
+    border-radius: 3px;
+}
+
+.color-box{
+    background: linear-gradient(to right, #cb1e1e, #640202);
+    width: 40%;
+    position: absolute;
+    top: 40;
+    right: 10;
+    height: 40%;
+    border-radius: 20px 0px 0px 20px;
+    z-index: -1;
+    transform: translateX(160px);
+}
+
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook{
+    width: 40px;
+    cursor: pointer;
+}
+
+.insta{
+    width: 70px;
+    cursor: pointer;
+    /*to remove the white background or any background*/
+    mix-blend-mode: color-burn;
+}
+
+.twitter{
+    width: 40px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:700px){
+    nav ul{
+        width: 70%;
+        background: linear-gradient(to right, #cb1e1e, #640202);
+        position: absolute;
+        top: 90px;
+        right: 0;
+        z-index: 2;
+        border-radius: 5px;
+    }  
+    
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: #fff;
+        margin-left: 10px;
+    }
+
+    nav ul li a:hover{
+        color: #0f152b;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    #menuList{
+        overflow: hidden;
+        height: auto;
+        transition: 0.5s;
+    }
+
+    .row-1 , .row-2 , .row-3{
+        flex-direction: column-reverse;
+        margin: 50px 0 0 50px;
+        
+    }
+
+    .color-box{
+        height: 16%;
+        right: 150px;
+        width: 70%;
+    }
+
+    nav{
+        text-align: left;
+    }
+
+    .row-1-2 , .row-2-2 , .row-3-2{
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+
+    .button{
+        font-size: 12px;
+    }
+
+    
+ 
+} 
+
+
+
+
+
+
+
+
